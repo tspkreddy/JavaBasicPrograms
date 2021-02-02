@@ -1,0 +1,9 @@
+I have done Data insertion retrieval update delete  operations using Angular 11 front end and SpringBoot 4+ JPA 
+as backend with Mysql & SQL Server Databases.
+
+I have used database master for both the databases.
+So please change your database name , username, password accordingly in spring boot application properties.
+
+I have mentioned both database properties in spring boot properties and comment other whichever is not necessary.
+
+

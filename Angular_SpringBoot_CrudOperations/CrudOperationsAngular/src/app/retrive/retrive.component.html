@@ -1,0 +1,29 @@
+<div  class="container">
+
+<table>
+   <tr><th style="width:1in"> <label>Id</label> </th>
+   <th style="width:1in"> <label>Name</label> </th> 
+   <th style="width:1in"><label>Email</label> </th></tr>
+</table>
+
+<div class="form-row" *ngFor="let obj of dataArray; let i=index"> 
+
+
+<div class="form-group col-md-4">
+    
+    <input type="number" style="width: 1in;" class="form-control" name="id{{i}}" [(ngModel)]="obj.id">
+
+    
+    <input type="string" style="width: 1in;" class="form-control" name="name{{i}}" [(ngModel)]="obj.name">
+
+  
+    <input type="string" style="width: 2in;" class="form-control" name="email{{i}}" [(ngModel)]="obj.email">
+
+    <button  type="submit"   class="btn btn-success"  (click)="save(i)"> Save</button>
+
+    
+</div> 
+
+</div>
+</div>
+

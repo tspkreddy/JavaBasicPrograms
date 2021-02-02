@@ -1,0 +1,30 @@
+.login-container{
+    background-color: rgba(50, 7, 243, 0.144);
+    width:auto;
+    height:4.84in;
+    padding-top: 1.5in;
+    padding-left:4.7in;
+}
+
+.form-group{
+    font-size: 20px;
+}
+
+.title{
+   text-align: center;
+   width: 354px;
+}
+
+.form-group input{
+
+    height: 20px;
+    font-size: 20px;  
+    background-color: transparent;
+    
+}
+
+.text-center button{
+    height:30px;
+    width:177px;
+    background-color: transparent;
+}

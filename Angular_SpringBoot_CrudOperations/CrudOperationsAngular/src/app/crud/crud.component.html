@@ -1,0 +1,43 @@
+<div class="container login-container">
+<div class="row">      
+<div class="col-md-6 login-form-2">           
+<form #regForm="ngForm">
+        
+    <table><tr><td><div class="title"><h1>CRUD Operations</h1></div></td></tr></table>  
+    <table>
+         
+          <tr><td><div class="form-group">    Enter Id: </div></td>
+              <td><div class="form-group">
+              <input type="number" class="form-control"  name="id"
+                                        [(ngModel)]="info.id" #id="ngModel" (change)="fetch()">
+                 </div></td></tr>
+      
+           <tr><td><div class="form-group">   Enter Name:</div></td>
+               <td><div class="form-group">
+               <input type="text" class="form-control"  name="name"
+                                        [(ngModel)]="info.name" #name="ngModel">
+                 </div></td></tr>
+     
+           <tr><td><div class="form-group">   Enter Email:</div></td>
+               <td> <div class="form-group">
+               <input type="email" class="form-control"  name="email"
+                                        [(ngModel)]="info.email" #email="ngModel">
+                 </div></td></tr>
+    </table>
+          
+    <table>
+           <tr><td><div class="text-center"> 
+               <button  [disabled]="!info.id||!info.name||!info.email" (click)="save()"
+                           class="btn btn-success" type="submit"> Save</button></div></td>
+
+                <td><div class="text-center"> 
+               <button                                               (click)="delete()" 
+                           class="btn btn-success" type="submit"> Delete</button></div></td>
+           </tr>
+    </table>
+
+</form>
+</div>
+</div>
+</div>
+           
